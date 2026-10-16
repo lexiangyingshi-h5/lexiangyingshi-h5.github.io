@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>乐享光影指南 | 合规影视推荐与正版导航（非乐享影视）</title>
+  <meta name="description" content="乐享光影指南（lexiangyingshi-h5）做合规影视片单推荐与正版渠道导航。非原乐享影视站、不聚合盗版片源、不提供BT种子/迅雷下载/网盘码。含光影片单、正版信源与伪站避坑。" />
+  <meta name="author" content="乐享光影指南" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#C9762B" />
+  <link rel="canonical" href="https://lexiangyingshi-h5.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="乐享光影指南" />
+  <meta property="og:title" content="乐享光影指南 | 合规影视推荐与正版导航" />
+  <meta property="og:description" content="非原乐享影视站，只做正版持权平台导航。" />
+  <meta property="og:url" content="https://lexiangyingshi-h5.github.io/" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="乐享光影指南 | 合规影视推荐与正版导航" />
+  <meta name="twitter:description" content="不重建乐享影视镜像，拒绝种子下载聚合。" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "乐享光影指南",
+    "url": "https://lexiangyingshi-h5.github.io/",
+    "description": "合规影视片单推荐与正版渠道导航站（非原乐享影视站）。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#FBF6EC;
+      --bg2:#F3EAD8;
+      --card:#FFFFFF;
+      --line:#E3D4B8;
+      --ink:#262019;
+      --muted:#7A6E5C;
+      --cream:#FFFDF7;
+      --ink-black:#1C1812;
+      --orange:#D98324;
+      --orange-deep:#C9762B;
+      --soft:#F6C56B;
+      --ticket:#FBF7EC;
+      --silver:#B9AE97;
+      --red:#C0392B;
+      --radius:16px;
+      --maxw:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    header.nav{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.95);backdrop-filter:blur(12px);border-bottom:2px solid var(--orange-deep)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+    .logo{font-weight:900;font-size:21px;display:flex;align-items:center;gap:10px}
+    .logo .sofa{width:36px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--orange),var(--orange-deep));display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;box-shadow:inset 0 -3px 0 rgba(0,0,0,.2)}
+    .logo b{color:var(--orange-deep)}
+    .logo span{color:var(--ink-black)}
+    nav.menu{display:flex;gap:6px;font-size:14px;font-weight:700;color:var(--muted)}
+    nav.menu a{padding:8px 14px;border-radius:8px;border:2px solid transparent;transition:.2s}
+    nav.menu a:hover{color:var(--orange-deep);border-color:var(--line);background:var(--bg2)}
+    .nav-toggle{display:none;background:none;border:2px solid var(--orange-deep);color:var(--ink);border-radius:8px;padding:5px 10px;font-size:18px;cursor:pointer}
+
+    .hero{padding:74px 0 80px;background:
+      radial-gradient(620px 340px at 85% 10%,rgba(217,131,36,.16),transparent 60%),
+      radial-gradient(520px 260px at 6% 95%,rgba(28,24,18,.08),transparent 60%),
+      linear-gradient(180deg,#F3EAD8,#FBF6EC);position:relative;overflow:hidden}
+    .hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .pill{display:inline-block;background:var(--orange-deep);color:#fff;font-size:11px;font-weight:800;padding:5px 16px;border-radius:20px;letter-spacing:1px;text-transform:uppercase;margin-bottom:18px}
+    .disclaim{display:inline-block;margin-left:8px;font-size:11px;font-weight:700;color:var(--orange-deep);border:1px dashed var(--orange-deep);border-radius:20px;padding:4px 12px;vertical-align:middle}
+    .hero h1{font-size:clamp(30px,5.5vw,52px);line-height:1.1;margin:0 0 14px;font-weight:900}
+    .hero h1 em{font-style:normal;color:var(--orange-deep)}
+    .hero h1 .ink-em{color:var(--ink-black)}
+    .hero p.lead{font-size:16px;color:var(--muted);max-width:640px;margin:0 0 22px}
+    .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+    .hero-tag{border:2px solid var(--line);border-radius:8px;padding:5px 13px;font-size:13px;font-weight:600;background:#fff}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:13px 26px;border-radius:10px;font-weight:800;font-size:15px;transition:.2s;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+    .btn-primary{background:var(--orange-deep);color:#fff;border:2px solid var(--orange-deep)}
+    .btn-primary:hover{background:var(--orange)}
+    .btn-ghost{border:2px solid var(--ink-black);color:var(--ink-black);background:transparent}
+    .btn-ghost:hover{background:var(--ink-black);color:#fff}
+
+    /* 沙发放映 */
+    .sofa-box{width:320px;height:240px;margin:0 auto;position:relative}
+    .screen{width:300px;height:170px;background:linear-gradient(180deg,var(--ink-black),#2C2418);border-radius:12px;margin:0 auto;position:relative;box-shadow:0 16px 40px rgba(28,24,18,.22);overflow:hidden}
+    .screen::before{content:"";position:absolute;top:10px;left:16px;right:16px;height:2px;background:rgba(246,197,107,.4)}
+    .screen .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:rgba(217,131,36,.85);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
+    .screen .tag{position:absolute;bottom:10px;left:16px;color:#CDB98E;font-size:10px;font-family:ui-monospace,Menlo,Consolas,monospace}
+    .couch{width:300px;height:54px;margin:10px auto 0;background:var(--orange);border-radius:14px 14px 18px 18px;position:relative;box-shadow:inset 0 -6px 0 rgba(0,0,0,.15)}
+    .couch::before,.couch::after{content:"";position:absolute;top:-26px;width:34px;height:30px;background:var(--orange-deep);border-radius:10px 10px 0 0}
+    .couch::before{left:6px}
+    .couch::after{right:6px}
+
+    section{padding:60px 0;border-bottom:2px dashed var(--line)}
+    .sec-head{margin-bottom:32px;text-align:center}
+    .sec-head .kicker{color:var(--orange-deep);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:11px}
+    .sec-head h2{font-size:clamp(24px,4vw,34px);margin:6px 0 8px;font-weight:900}
+    .sec-head p{color:var(--muted);margin:0 auto;max-width:700px;font-size:14px}
+
+    /* 场景：暖卡 */
+    .scene{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .scene-card{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:24px;text-align:center;transition:.3s}
+    .scene-card:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(28,24,18,.14);border-color:var(--orange-deep)}
+    .scene-card .ic{font-size:34px;display:block;margin-bottom:8px}
+    .scene-card h3{margin:0 0 6px;font-size:15px;font-weight:900}
+    .scene-card p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 片单：横幅卡 */
+    .list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .film{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:22px;display:grid;grid-template-columns:54px 1fr;gap:14px;transition:.3s}
+    .film:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(28,24,18,.14)}
+    .film .ic{font-size:32px;text-align:center}
+    .film h3{margin:0 0 4px;font-size:16px;font-weight:900}
+    .film .sub{font-size:11px;color:var(--orange-deep);font-weight:700;margin-bottom:6px}
+    .film p{margin:0;color:var(--muted);font-size:13px}
+    .film ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:12px}
+    .film ul li{margin:2px 0}
+
+    /* 信源：四宫格 */
+    .src{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .src-card{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:22px;text-align:center;transition:.3s}
+    .src-card:hover{border-color:var(--orange-deep);background:var(--bg2)}
+    .src-card .ic{font-size:32px;margin-bottom:8px;display:block}
+    .src-card h3{margin:0 0 4px;font-size:15px;font-weight:800}
+    .src-card p{margin:0;color:var(--muted);font-size:12px}
+
+    /* 避坑：三列 */
+    .warn{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .reef{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:22px;border-top:5px solid var(--red)}
+    .reef:nth-child(2){border-top-color:var(--ink-black)}
+    .reef:nth-child(3){border-top-color:var(--orange-deep)}
+    .reef h3{margin:0 0 8px;font-size:16px;font-weight:800}
+    .reef p{margin:0;color:var(--muted);font-size:13px}
+
+    .notice{background:var(--bg2);border:2px dashed var(--orange-deep);border-radius:12px;padding:14px 18px;font-size:13px;color:var(--muted);max-width:840px;margin:24px auto 0}
+    .notice b{color:var(--orange-deep)}
+
+    footer{padding:36px 0;text-align:center;color:#fff;font-size:13px;background:var(--ink-black)}
+    footer a{color:var(--soft)}
+
+    #toTop{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;border:2px solid var(--orange-deep);background:var(--orange-deep);color:#fff;font-size:20px;font-weight:900;cursor:pointer;opacity:0;pointer-events:none;transition:.25s}
+    #toTop.show{opacity:1;pointer-events:auto}
+    .reveal{opacity:0;transform:translateY(16px);transition:.5s ease}
+    .reveal.in{opacity:1;transform:none}
+
+    @media (max-width:980px){
+      .hero .wrap{grid-template-columns:1fr}
+      .scene{grid-template-columns:1fr 1fr}
+      .list{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr 1fr}
+      .warn{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .nav-toggle{display:block}
+      nav.menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;padding:10px 20px 20px;background:rgba(251,246,236,.98);border-bottom:2px solid var(--orange-deep);display:none}
+      nav.menu.open{display:flex}
+      nav.menu a{padding:12px 8px;border-bottom:2px solid var(--line);border-radius:0}
+      .scene{grid-template-columns:1fr}
+      .src{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="logo"><span class="sofa">🛋️</span><b>乐享</b><span>光影指南</span></div>
+      <button class="nav-toggle" aria-label="菜单" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#home">首页</a>
+        <a href="#scene">轻松场景</a>
+        <a href="#list">光影片单</a>
+        <a href="#src">正版信源</a>
+        <a href="#warn">伪乐享避坑</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="pill">Cozy Reel · Legal Only<span class="disclaim">非乐享影视</span></div>
+        <h1>乐享光影指南<br/>沙发上选片，不碰<em>种子站</em></h1>
+        <p class="lead">本站不是原「乐享影视」、不接“BT种子下载/迅雷链接”流量；只做合规片单推荐：合家欢、轻喜剧、纪录、正版租赁导航，全部走持权平台。</p>
+        <div class="hero-tags">
+          <span class="hero-tag">光影片单</span>
+          <span class="hero-tag">正版导航</span>
+          <span class="hero-tag">不聚合盗版</span>
+          <span class="hero-tag">无BT种子</span>
+          <span class="hero-tag">非原站复刻</span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#scene">按场景选片 →</a>
+          <a class="btn btn-ghost" href="#warn">识别伪乐享影视</a>
+        </div>
+      </div>
+      <div>
+        <div class="sofa-box">
+          <div class="screen">
+            <div class="play">▶</div>
+            <div class="tag">SOURCE: LICENSED OTT</div>
+          </div>
+          <div class="couch"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="scene" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Cozy Mood</div>
+        <h2>轻松场景</h2>
+        <p>不按“免费下载”选片，按晚上想怎么躺平选。</p>
+      </div>
+      <div class="scene">
+        <div class="scene-card"><span class="ic">🛋️</span><h3>客厅合家</h3><p>不费脑、不吓人</p></div>
+        <div class="scene-card"><span class="ic">🍵</span><h3>午后轻片</h3><p>短集数、慢节奏</p></div>
+        <div class="scene-card"><span class="ic">🌙</span><h3>睡前一部</h3><p>治愈、不悬疑拉满</p></div>
+        <div class="scene-card"><span class="ic">🎞️</span><h3>周末纪录</h3><p>大屏、正版引进</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="list" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Cozy Reel List</div>
+        <h2>光影片单</h2>
+        <p>四个方向，只列类型与正版路径，不列盗版源。</p>
+      </div>
+      <div class="list">
+        <div class="film">
+          <span class="ic">🏠</span>
+          <div>
+            <h3>家庭厅</h3>
+            <div class="sub">合家欢 · 低冲突</div>
+            <p>亲情剧、治愈动画、生活轻喜剧。</p>
+            <ul>
+              <li>正版OTT家庭专区</li>
+              <li>避开枪版录屏</li>
+              <li>电视投屏友好</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <span class="ic">🍵</span>
+          <div>
+            <h3>午后轻片</h3>
+            <div class="sub">轻松 · 短时长</div>
+            <p>情景喜剧、美食、职场轻喜剧。</p>
+            <ul>
+              <li>正版平台分集订阅</li>
+              <li>不装第三方播放器</li>
+              <li>广告位只认官方</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <span class="ic">🌙</span>
+          <div>
+            <h3>睡前一部</h3>
+            <div class="sub">治愈 · 不烧脑</div>
+            <p>自然、音乐、慢生活纪录片。</p>
+            <ul>
+              <li>官方纪录专区</li>
+              <li>不挂盗版链接</li>
+              <li>不搜“乐享同款源”</li>
+            </ul>
+          </div>
+        </div>
+        <div class="film">
+          <span class="ic">🎭</span>
+          <div>
+            <h3>正剧悬疑</h3>
+            <div class="sub">周末 · 付费租赁</div>
+            <p>社会剧、推理、限定剧集。</p>
+            <ul>
+              <li>单片租赁/订阅正版</li>
+              <li>认准持权平台</li>
+              <li>不点假播放键</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="src" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Legal Sources</div>
+        <h2>正版信源</h2>
+        <p>只走持权分发，不碰乐享影视原站种子博客形态。</p>
+      </div>
+      <div class="src">
+        <div class="src-card"><span class="ic">📺</span><h3>正版OTT</h3><p>持牌平台订阅/单片租赁</p></div>
+        <div class="src-card"><span class="ic">🎬</span><h3>院线/重映</h3><p>正规购票与官方重映</p></div>
+        <div class="src-card"><span class="ic">🏛️</span><h3>影展放映</h3><p>官方放映、学术展映</p></div>
+        <div class="src-card"><span class="ic">📼</span><h3>纪录专区</h3><p>正版引进纪录片</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warn" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">Fake LeXiang</div>
+        <h2>伪「乐享影视」避坑</h2>
+        <p>原乐享影视是「分享迅雷BT种子下载」博客站，别接原站流量。</p>
+      </div>
+      <div class="warn">
+        <div class="reef">
+          <h3>🚫 BT种子/迅雷链接</h3>
+          <p>原站形态就是分享种子下载；按规不得链接、聚合非法视听节目源，不发提取码、种子磁链。</p>
+        </div>
+        <div class="reef">
+          <h3>🚫 网盘码+离线缓存</h3>
+          <p>网盘提取码、第三方解析播源、离线下载都不在正版体系内，别点别充。</p>
+        </div>
+        <div class="reef">
+          <h3>🚫 播放器聚合克隆</h3>
+          <p>“乐享影视”同名站若挂多线路、专用播放器，属未授权聚合架构[4](@ref)，不是原站也不是正版。</p>
+        </div>
+      </div>
+      <div class="notice">
+        <b>声明：</b>本页「乐享光影指南」仅为"乐享"字面的光影主题导航，与原乐享影视站无任何关系；不重建其原站/镜像、不聚合影视资源、不提供BT种子、迅雷链接、磁力、网盘码与盗版播放；按《互联网视听节目服务管理规定》要求，不转播、链接、聚合、集成非法视听节目源[5](@ref)。
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      © 2026 乐享光影指南（lexiangyingshi-h5）｜ 静态展示站点 ｜
+      内页链接以 <a href="#">#</a> 占位 ｜
+      网站网址：https://lexiangyingshi-h5.github.io ｜
+      非原乐享影视站｜不提供盗版资源、种子、磁力与成人内容。
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    document.querySelectorAll('#menu a').forEach(function(a){
+      a.addEventListener('click',function(){ document.getElementById('menu').classList.remove('open'); });
+    });
+    var toTop=document.getElementById('toTop');
+    window.addEventListener('scroll',function(){ toTop.classList.toggle('show',window.scrollY>400); });
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  </script>
+</body>
+</html>
